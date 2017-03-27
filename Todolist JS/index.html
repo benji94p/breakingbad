@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .crossout {
+            text-decoration: line-through;
+        }
+        li {
+            list-style: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <input type="text">
+    <button id="btn1">Add item to list</button>
+    <button id="btn2">Remove item from the list</button>
+    <h2>To do</h2>
+    <ul id="list1">
+        <li>Apples</li>
+        <li>Houses</li>
+        <li>Cat</li>
+        <li>Mom</li>
+        <li>Homework</li>
+    </ul>
+    <script>
+        
+        let lis = document.querySelectorAll ('li');
+        let list1 = document.querySelector ('#list1');
+        let btn1 = document.querySelector ('#btn1');
+        let btn2 = document.querySelector ('#btn2');
+        let input = document.querySelector ('input');
+        
+        btn1.addEventListener('click', addItem);
+        
+       function addItem () {
+           let newLi = document.createElement ("li");
+           newLi.innerHTML=input.value;
+           list1.appendChild(newLi);
+       }
+        
+        lis.forEach(function (i){
+                    i.addEventListener("click", mark);
+                    }) //inline function
+        
+        function mark (){
+            this.classList.toggle("crossout");
+        };
+        
+        btn2.addEventListener('click', removeItem);
+        
+        func
+        
+    </script>
+</body>
+</html>

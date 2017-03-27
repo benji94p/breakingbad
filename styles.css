@@ -1,0 +1,63 @@
+/*GENERAL */
+
+#background {
+    height: 900px;
+    width: 99%;
+    z-index: -10;
+}
+
+button {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    height: 60px;
+    width: 100px;
+    font-family:prstartk.ttf;
+    font-size: 30px;
+    color:black;
+}
+
+div img {
+    max-height: 250px;
+}
+
+#jessie {
+    position: absolute;
+    z-index: 10;
+    top:570px;
+    left:-150px;
+}
+
+#walter {
+    position: absolute;
+    z-index: 10;
+    top:570px;
+    right:500px;
+}
+
+#rv {
+    position: absolute;
+    z-index: 10;
+    top:600px;
+    right: 80px;
+
+}
+
+.dollars {
+    position: absolute;
+    z-index: 10;
+    top: 700px;
+    right: 470px;
+    max-height: 60px;
+}
+
+/*ANIMATION */
+
+.jessEnters {
+            animation: jessEnters 2s forwards;
+        }
+        @keyframes jessEnters {
+            to {
+                transform: translate(600px)
+            }
+        }
