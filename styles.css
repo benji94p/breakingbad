@@ -51,6 +51,28 @@ div img {
     max-height: 60px;
 }
 
+#cloud1 {
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    right: 700px;
+    max-height: 130px;
+}
+
+#cloud2 {
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    right: 700px;
+    max-height: 130px;
+}
+#cloud3 {
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    right: 700px;
+    max-height: 130px;
+}
 /*ANIMATION */
 
 .jessEnters {
@@ -61,3 +83,17 @@ div img {
                 transform: translate(600px)
             }
         }
+.bubbleanimation {
+    animation: bubbleanimation 1.5s ;
+}
+
+@keyframes bubbleanimation {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
